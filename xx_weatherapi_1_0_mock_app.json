@@ -1,0 +1,43 @@
+{
+	"info": {
+		"title": "xx.WeatherAPI",
+		"version": "1.0",
+		"x-lastModified": "Apr 21, 2016 07:03AM PST"
+	},
+	"paths": {
+		"/xx/CityWeatherByZip/{ZipCode}": {
+			"get": {
+				"parameters": [
+					{
+						"description": "",
+						"format": "",
+						"in": "path",
+						"name": "ZipCode",
+						"required": true,
+						"type": "string"
+					}
+				],
+				"produces": [
+					"application/json"
+				],
+				"responses": {
+					"200": {
+						"description": "Success",
+						"examples": {
+							"application/json": "{\n    \"city\": \"xx\",\n    \"temperature\": \"xx\",\n    \"clouds\": \"xx\",\n    \"wind\": \"xx\",\n    \"forecast\": \"xx\"\n}"
+						},
+						"schema": {
+							"type": "string"
+						}
+					}
+				}
+			}
+		}
+	},
+	"swagger": "2.0",
+	"host": "app.cloud.tibco.com:443",
+	"schemes": [
+		"https"
+	],
+	"basePath": "/uyi4jj5jxd47rvt3yzlulj5iooic7vhm"
+}
